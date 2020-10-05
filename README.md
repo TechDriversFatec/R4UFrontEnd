@@ -1,24 +1,44 @@
-# r4u_front
+# Projeto Fronted - R4U
 
-## Project setup
+## Setup do projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila para desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compila e builda para produção
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Cronograma de entregas
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+##### Sprint 1
+- Cloud
+- Database Automation
+
+##### Sprint 2
+- CI
+
+##### Sprint 3
+- Testing
+
+##### Sprint 4
+- Load Balancing
+
+------------
+
+
+
+### Primeira entrega
+
+- FlyWay como database automation;
+- Deploy do código backend para a Cloud AWS;
+
+### Segunda entrega
+
+- Ambiente configurado com Jenkins CI e AWS Code Deploy;
