@@ -28,7 +28,13 @@ npm run build
 - Testing
 
 ##### Sprint 4
+- Testing & CI
+
+##### Sprint 5
 - Load Balancing
+
+##### Sprint 6
+- Pendente
 
 ------------
 
@@ -42,3 +48,7 @@ npm run build
 ### Segunda entrega
 
 - Ambiente configurado com Jenkins CI e AWS Code Deploy;
+
+### Terceira entrega
+
+- Criação e execução de testes automatizados utilizando a biblioteca Pytest
