@@ -1,8 +1,14 @@
 <template>
   <div class="main-container">
-    <p>Nossa recomendação é:</p>
-    <div class="recommendation-container">
+    <div class="main-card">
+      <p>A Origem - 2010</p>
       <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjmEJrU0SfR9u6z3lafVLv5nVGoBqbgsVJkVO_CR0WMNEhPwu" />
+      <p class="description-sinopsis">
+        Um ladrão que rouba segredos corporativos com o uso de uma tecnologia de compartilhamento de sonhos recebe a tarefa oposta, tendo que implantar uma ideia na cabeça de um CEO.
+      </p>
+      <p><span class="description-bold">Duração:</span> 2h 28min</p>
+    </div>
+    <!-- <div class="recommendation-container">
       <div class="description">
         <p class="description-bold">A Origem</p>
         <p><span class="description-bold">Classificação:</span> 14 anos</p>
@@ -13,8 +19,8 @@
           <span class="description-bold">Sinopse:</span> Um ladrão que rouba segredos corporativos com o uso de uma tecnologia de compartilhamento de sonhos recebe a tarefa oposta, tendo que implantar uma ideia na cabeça de um CEO.
         </p>
       </div>
-    </div>
-  </div>    
+    </div> -->
+  </div> 
 </template>
 
 <style scoped>
@@ -22,11 +28,19 @@
   color: white;
   font-size: 18px;
   padding: 10px;
+  height: 100vh;
+}
+
+.main-card {
+  padding: 30px;
+  background-color: #212123;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 300px;
 }
 
 .image {
   width: 200px;
-  margin-right: 20px;
 }
 
 .recommendation-container {
@@ -46,10 +60,13 @@
   font-weight: 700;
 }
 
+.description-sinopsis {
+  text-align: left;
+}
+
 @media screen and (max-width: 425px) {
   .description {
     width: 400px;
-    text-align: center;
   }
 
   .image {
