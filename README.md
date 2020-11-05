@@ -44,7 +44,7 @@ npm run build
 - [x] **Sprint 1** - Cloud & Database Automation
 - [X] **Sprint 2** - CI
 - [X] **Sprint 3** - Testing
-- [ ] **Sprint 4** - Integração Testing & CI
+- [X] **Sprint 4** - Integração Testing & CI
 - [ ] **Sprint 5** - Integração Front/Back e Testes no Front
 - [ ] **Sprint 6** - Planejamento pendente
 
