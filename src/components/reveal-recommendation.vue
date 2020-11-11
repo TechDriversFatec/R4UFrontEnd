@@ -1,18 +1,18 @@
 <template>
   <div class="main-container">
     <div class="main-card">
-      <p>A Origem - 2010</p>
+      <p>{{filme}}</p>
       <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFjmEJrU0SfR9u6z3lafVLv5nVGoBqbgsVJkVO_CR0WMNEhPwu" />
       <p class="description-sinopsis">
         Um ladrão que rouba segredos corporativos com o uso de uma tecnologia de compartilhamento de sonhos recebe a tarefa oposta, tendo que implantar uma ideia na cabeça de um CEO.
       </p>
-      <p><span class="description-bold">Duração:</span> 2h 28min</p>
+      <p><span class="description-bold">Duração:</span>Duração</p>
     </div>
     <!-- <div class="recommendation-container">
       <div class="description">
-        <p class="description-bold">A Origem</p>
+        <p class="description-bold">{{filme}}</p>
         <p><span class="description-bold">Classificação:</span> 14 anos</p>
-        <p><span class="description-bold">Duração:</span> 2h 28min</p>
+        <p><span class="description-bold">Duração:</span>Data</p>
         <p>Ação, Aventura, Sci-Fi</p>
         <p><span class="description-bold">Lançamento:</span> 6 de agosto de 2010</p>
         <p class="description-sinopsis">
@@ -75,3 +75,28 @@
   }
 }
 </style>
+
+<script>
+
+import axios from 'axios'
+
+export default {
+
+  mounted () {
+      axios
+          .get('localhost:5001/getRecommendation')
+          .then(response => (this.filme = response))
+  },
+
+
+  data () {
+    return {
+       filme:''
+    }
+  },
+  methods: {
+
+  }
+}
+
+</script>
