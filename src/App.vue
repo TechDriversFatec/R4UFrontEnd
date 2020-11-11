@@ -1,12 +1,8 @@
 <template>
   <div id="app">
-    <div class="header">
-    </div>
+    <div class="header" />
     <landing-page v-if="step === 1" @nextStep="nextStep()" />
-    <reveal-recommendation v-else />
-    <div class="disclaimer">
-      <!-- <p>R4U - Todos os direitos reservados. FATEC São José dos Campos</p> -->
-    </div>
+    <reveal-recommendation v-if="step === 2" @previousStep="previousStep()" />
   </div>
 </template>
 
@@ -27,7 +23,10 @@ export default {
   },
   methods: {
     nextStep () {
-      this.step++;
+      this.step = 2;
+    },
+    previousStep () {
+      this.step = 1;
     }
   }
 }
