@@ -2,7 +2,7 @@
   <div class="main-container">
     <div class="main-card">
       <p>Nossa recomendação para você é:</p>
-      <p class="movie-title">{{filme}} - {{genero}}</p>
+      <p class="movie-title">{{filme}}</p>
       <button class="voltar-button" @click="previousStep()">Voltar</button>
     </div>
   </div> 
@@ -14,16 +14,14 @@ import axios from 'axios'
 export default {
   data () {
     return {
-       filme: 'Filmasso',
-       genero: 'Generasso'
+       filme: 'Filmasso'
     }
   },
   mounted () {
     axios
       .get('http://localhost:5001/getRecommendation')
       .then(response => {
-        this.filme = response.data.filme 
-        this.genero = response.data.genero
+        this.filme = response.data.filme
       })
   },
   methods: {
