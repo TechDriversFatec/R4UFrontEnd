@@ -1,5 +1,3 @@
-sucesso
-
 ## Laboratório de Projeto de Banco de Dados
 
 - Introdução do projeto
@@ -47,8 +45,8 @@ npm run build
 - [X] **Sprint 2** - CI
 - [X] **Sprint 3** - Testing
 - [X] **Sprint 4** - Integração Testing & CI
-- [ ] **Sprint 5** - Integração Front/Back e Testes no Front
-- [ ] **Sprint 6** - Planejamento pendente
+- [ ] **Sprint 5** - Deploy Automático de Frontend
+- [ ] **Sprint 6** - Testes Frontend
 
 ------------
 
