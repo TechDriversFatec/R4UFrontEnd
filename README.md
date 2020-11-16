@@ -92,3 +92,5 @@ Houveram imprevistos nesta sprint devido a uma exclusão acidental de nossas dua
 - Reconfiguração do CI com a separação de ambientes e os testes de backend;
 - Alteraçes no frontend com a adição do Axios para fazer requests para o backend;
 - Deploy automatizado do frontend utilizando Jenkins e AWS Code Deploy;
+
+teste
