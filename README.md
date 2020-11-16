@@ -88,6 +88,7 @@ https://drive.google.com/file/d/17PsqBPnBGSps0Zv4Hh_iG-TAsI4xWZZ6
 Houveram imprevistos nesta sprint devido a uma exclusão acidental de nossas duas máquinas na AWS, devido a isso a entrega foi renegociada para o deploy automático de front-end, deixando os testes de interface para depois.
 
 - Recriação das duas máquinas da AWS a partir de imagens da Sprint 3;
+- Configuração de proteção contra exclusão acidental de máquinas na AWS;
 - Reconfiguração do CI com a separação de ambientes e os testes de backend;
 - Alteraçes no frontend com a adição do Axios para fazer requests para o backend;
 - Deploy automatizado do frontend utilizando Jenkins e AWS Code Deploy;
