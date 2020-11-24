@@ -19,7 +19,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://localhost:5001/getRecommendation')
+      .get('http://18.188.81.87:5001/getRecommendation')
       .then(response => {
         this.filme = response.data.filme
       })
