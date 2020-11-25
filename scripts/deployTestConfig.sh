@@ -20,4 +20,4 @@ docker build . -t my-app
 
 docker run -d -p 8081:80 my-app
 
-sudo robot --nostatusrc --outputdir /home/ubuntu/robotLogs tests/robotTests.robot
+robot --nostatusrc --outputdir /home/ubuntu/robotLogs tests/robotTests.robot
