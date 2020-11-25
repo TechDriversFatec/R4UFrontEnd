@@ -8,11 +8,13 @@ docker rm $(docker ps -aq)
 
 docker rmi $(docker images -aq)
 
-cd /home/ubuntu/r4u_application_frontend
+cd /home/ubuntu/r4u_application
 
 docker-compose -f docker-compose-migration.yml up -d
 
 docker-compose up -d
+
+cd /home/ubuntu/r4u_application_frontend
 
 docker build . -t my-app
 
