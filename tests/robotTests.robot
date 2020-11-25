@@ -6,7 +6,7 @@ Library           Selenium2Library
 Suite Setup       Connect To Database    dbapiModuleName=psycopg2    dbName=pi    dbUsername=fatec    dbPassword=fatec    dbHost=localhost    dbPort=5432
 Suite Teardown    Close Browser
 
-
+*** Test Cases ***
 testFrontend
     ${frontIP}    Run    hostname -I | awk '{print $1}'
     ${proxy}    Evaluate    selenium.webdriver.Proxy()
