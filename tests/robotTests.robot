@@ -9,10 +9,11 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 testFrontend
     ${frontIP}    Run    hostname -I | awk '{print $1}'
-    ${proxy}    Evaluate    selenium.webdriver.Proxy()
-    ${proxy.http_proxy}    Set Variable    ${frontIP}:8080
-    Create Webdriver    Firefox    proxy=${proxy}
-    ${service args}    Create List    --proxy=${frontIP}:8080
+    ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
+    Call Method    ${firefox options}   add_argument    -headless
+    Create Webdriver    Firefox    firefox_options=${firefox options}
+    Go To    http://${frontIP}:8080
+    ${service args}    Create List    proxy=${frontIP}:8080
     Wait Until Element Is Visible    xpath=.//html/body/div/div[2]/div/button
     Click Element    xpath=.//html/body/div/div[2]/div/button
     Wait Until Element Is Visible    xpath=.//html/body/div/div[2]/div/p[2]
