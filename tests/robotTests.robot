@@ -12,8 +12,8 @@ testFrontend
     ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
     Call Method    ${firefox options}   add_argument    -headless
     Create Webdriver    Firefox    firefox_options=${firefox options}
-    Go To    http://${frontIP}:8080
-    ${service args}    Create List    proxy=${frontIP}:8080
+    Go To    http://${frontIP}:8081
+    ${service args}    Create List    proxy=${frontIP}:8081
     Wait Until Element Is Visible    xpath=.//html/body/div/div[2]/div/button
     Click Element    xpath=.//html/body/div/div[2]/div/button
     Wait Until Element Is Visible    xpath=.//html/body/div/div[2]/div/p[2]
