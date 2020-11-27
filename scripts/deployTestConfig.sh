@@ -26,4 +26,6 @@ sudo chmod 777 /home/ubuntu/robotLogs
 
 sudo chmod 777 /home/ubuntu/robotLogs/*
 
+sudo chmod 777 /home/ubuntu/r4u_application/tests/robotTests.robot
+
 robot --nostatusrc --outputdir /home/ubuntu/robotLogs tests/robotTests.robot
