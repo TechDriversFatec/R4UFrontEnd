@@ -20,7 +20,7 @@ docker build . -t my-app
 
 docker run -d -p 8081:80 my-app
 
-sudo chmod 777 /home/ubuntu/robotLogs/tests
+sudo chmod 777 /home/ubuntu/r4u_application_frontend/tests
 
 cd tests
 
