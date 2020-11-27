@@ -8,7 +8,7 @@ Suite Teardown    Close Browser
 
 *** Test Cases ***
 testFrontend
-    Sleep    60s
+    Sleep    120s
     ${frontIP}    Run    hostname -I | awk '{print $1}'
     ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
     Call Method    ${firefox options}   add_argument    -headless
