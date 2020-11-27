@@ -8,7 +8,7 @@ Suite Teardown    Close Browser
 
 *** Test Cases ***
 testFrontend
-    Sleep    120s
+    Sleep    40s
     ${frontIP}    Run    hostname -I | awk '{print $1}'
     ${firefox options} =     Evaluate    sys.modules['selenium.webdriver'].firefox.webdriver.Options()    sys, selenium.webdriver
     Call Method    ${firefox options}   add_argument    -headless
@@ -18,6 +18,7 @@ testFrontend
     Wait Until Element Is Visible    xpath=.//html/body/div/div[2]/div/button
     Click Element    xpath=.//html/body/div/div[2]/div/button
     Wait Until Element Is Visible    xpath=.//html/body/div/div[2]/div/p[2]
+    Sleep    2s
     ${resultFront}    Get Text    xpath=.//html/body/div/div[2]/div/p[2]
     ${query}    Query    SELECT NOME FROM Recommendation WHERE NOME = '${resultFront}'
     Should Be Equal    ${query[0][0]}    ${resultFront}
