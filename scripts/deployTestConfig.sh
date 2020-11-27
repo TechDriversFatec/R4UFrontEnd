@@ -22,6 +22,8 @@ docker run -d -p 8081:80 my-app
 
 sudo chmod 777 /home/ubuntu/r4u_application_frontend/tests
 
+sudo chmod 777 /home/ubuntu/r4u_application_frontend/tests/*
+
 cd tests
 
 robot --nostatusrc --outputdir . robotTests.robot
