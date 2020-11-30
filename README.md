@@ -1,5 +1,19 @@
-agr vai
 ## Laboratório de Projeto de Banco de Dados
+
+### Integrantes:
+  
+Scrum Master:  
+  [Ana Carolina S. de Moura](https://www.linkedin.com/in/ana-carolina-simplicio-de-moura-84bb49148/)  
+    
+P.O:  
+  [Maria Clara Oliveira](https://www.linkedin.com/in/oliveira-mclaraa/)  
+    
+Dev Team:  
+  [André Pires](https://www.linkedin.com/in/andr%C3%A9-pires-87558919b/)  
+  [Bruno G. D. Faria](https://www.linkedin.com/in/bruno-dionisio-6134451a7/)  
+  [Fernando T. de Castro](https://www.linkedin.com/in/ftcastro/)  
+  [Gilberto Costa Jr.](https://www.linkedin.com/in/gilberto-costa-b8b988161/)  
+  [Wesley Vinicius Silva](https://www.linkedin.com/in/wesley-vinicius-silva-8568a516b/)
 
 - Introdução do projeto
 
@@ -46,7 +60,7 @@ npm run build
 - [X] **Sprint 2** - CI
 - [X] **Sprint 3** - Testing
 - [X] **Sprint 4** - Integração Testing & CI
-- [ ] **Sprint 5** - Deploy Automático de Frontend
+- [X] **Sprint 5** - Deploy Automático de Frontend
 - [ ] **Sprint 6** - Testes Frontend
 
 ------------
@@ -93,3 +107,9 @@ Houveram imprevistos nesta sprint devido a uma exclusão acidental de nossas dua
 - Reconfiguração do CI com a separação de ambientes e os testes de backend;
 - Alteraçes no frontend com a adição do Axios para fazer requests para o backend;
 - Deploy automatizado do frontend utilizando Jenkins e AWS Code Deploy;
+
+### Sexta entrega - Sprint 6 (Testes de Frontend)
+
+- Desenvolvimento do teste de frontend, testando tanto interface quanto conexão com o backend. Testes desenvolvidos com Selenium em conjunto com Robot Framework, o teste navega pela página e realiza o clique para então comparar o resultado dado na tela com os registros do banco de dados;
+- Integração do teste na pipeline de frontend, fazendo com que o deploy seja interrompido caso haja alguma falha com o teste rodado;
+- Adição do step de merge do código na branch master e deploy para máquina produção na pipeline responsável pelo frontend;
