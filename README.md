@@ -113,3 +113,4 @@ Houveram imprevistos nesta sprint devido a uma exclusão acidental de nossas dua
 - Desenvolvimento do teste de frontend, testando tanto interface quanto conexão com o backend. Testes desenvolvidos com Selenium em conjunto com Robot Framework, o teste navega pela página e realiza o clique para então comparar o resultado dado na tela com os registros do banco de dados;
 - Integração do teste na pipeline de frontend, fazendo com que o deploy seja interrompido caso haja alguma falha com o teste rodado;
 - Adição do step de merge do código na branch master e deploy para máquina produção na pipeline responsável pelo frontend;
+# R4UFrontEnd
